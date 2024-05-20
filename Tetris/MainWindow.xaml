@@ -1,0 +1,132 @@
+﻿<Window x:Class="Tetris.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tetris"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" 
+        KeyDown="Window_KeyDown">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="2" Width="200" Margin="0 10 0 10">
+            <Grid ShowGridLines="True" x:Name="tetrisgrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+            </Grid>
+        </Border>
+
+        <Border
+            BorderBrush="Black" BorderThickness="2" CornerRadius="10"
+            Width="50" Height="50" Margin="270 0 0 300">
+            <StackPanel Orientation="Vertical">
+                <TextBlock 
+                    Text="Next"  
+                     TextAlignment="Center" FontWeight="Bold"
+    >
+                </TextBlock>
+                <Image Margin="3 0 3 3"
+                    x:Name="Nblock" Stretch="UniformToFill"
+                    >
+                </Image>
+            </StackPanel>
+            
+        </Border>
+
+        <Border 
+    BorderBrush="Black" BorderThickness="2" CornerRadius="10"
+    Width="50" Height="50" Margin="-270 0 0 300">
+            <StackPanel Orientation="Vertical">
+                <TextBlock 
+                Text="Hold"  
+                 TextAlignment="Center" FontWeight="Bold"
+>
+                </TextBlock>
+                <Image
+                x:Name="Hblock" Stretch="UniformToFill"
+                >
+                </Image>
+            </StackPanel>
+
+        </Border>
+
+        <Border
+            BorderBrush="Black" BorderThickness="2" CornerRadius="10"
+            Width="100" Height="50" Margin="320 0 0 150">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock 
+                    Text="Level:" Height="30" VerticalAlignment="Center"
+                    Margin="3,-8,20,-10" FontWeight="Bold" FontSize="20" FontFamily="OCR A Extended">
+                </TextBlock>
+
+                <TextBlock 
+                    Name="Score" Text="0" Width="30" Height="30" 
+                    Margin=" -20 2 0 0" FontWeight="Bold" FontSize="20" FontFamily="OCR A Extended">
+                </TextBlock>
+            </StackPanel>
+        </Border>
+        <StackPanel>
+            <Border
+                BorderBrush="Black" BorderThickness="2" CornerRadius="10"
+                Width="100" Height="50" Margin="320 175 0 20">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock 
+                    Text="Score:" Width="69" Height="28" 
+                    Margin="0 0 30 0" FontWeight="Bold" FontSize="20" FontFamily="OCR A Extended"
+                    >
+                    </TextBlock>
+                    <TextBlock
+                        Name="Scores" Text="0" Width="30" Height="30" 
+                        Margin=" -28 4 0 0" FontWeight="Bold" FontSize="20" FontFamily="OCR A Extended">
+                    </TextBlock>
+                </StackPanel>
+            </Border>
+            <Border
+                BorderBrush="Black" BorderThickness="2" CornerRadius="10"
+                Width="100" Height="50" Margin="320 -15 0 0">
+                <StackPanel>
+                    <TextBlock
+                        Text="Lines:" Height="50" 
+                        Margin="3,9,20,-11" FontWeight="Bold" FontSize="20" FontFamily="OCR A Extended">
+                    </TextBlock>
+                    <TextBlock
+                        Name="Lines" Text="0" Width="30" Height="30" 
+                        Margin=" 73 -47 0 0" FontWeight="Bold" FontSize="20" FontFamily="OCR A Extended">
+                    </TextBlock>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Window>

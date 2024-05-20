@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Former\I.png" />
+    <None Remove="Former\J.png" />
+    <None Remove="Former\L.png" />
+    <None Remove="Former\O.png" />
+    <None Remove="Former\S.png" />
+    <None Remove="Former\T.png" />
+    <None Remove="Former\Z.png" />
+    <None Remove="I-Block.png" />
+    <None Remove="J-Block.png" />
+    <None Remove="L-Block.png" />
+    <None Remove="O-Block.png" />
+    <None Remove="S-Block.png" />
+    <None Remove="T-Block.png" />
+    <None Remove="Z-BLock.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Former\I.png" />
+    <Resource Include="Former\J.png" />
+    <Resource Include="Former\L.png" />
+    <Resource Include="Former\O.png" />
+    <Resource Include="Former\S.png" />
+    <Resource Include="Former\T.png" />
+    <Resource Include="Former\Z.png" />
+    <Resource Include="I-Block.png" />
+    <Resource Include="J-Block.png" />
+    <Resource Include="L-Block.png" />
+    <Resource Include="O-Block.png" />
+    <Resource Include="S-Block.png" />
+    <Resource Include="T-Block.png" />
+    <Resource Include="Z-BLock.png" />
+  </ItemGroup>
+
+</Project>
